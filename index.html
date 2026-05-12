@@ -5,29 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Two Desks - Small studio. Thoughtful apps.</title>
   <meta name="description" content="Two Desks is a small studio making privacy-first mobile apps. No dark patterns, no guilt trips.">
+  <meta name="theme-color" content="#FAF9F7">
+  <link rel="canonical" href="https://twodesks.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Two Desks">
+  <meta property="og:title" content="Two Desks - Small studio. Thoughtful apps.">
+  <meta property="og:description" content="A small studio making privacy-first mobile apps. No dark patterns, no guilt trips.">
+  <meta property="og:url" content="https://twodesks.app/">
+  <meta property="og:image" content="https://twodesks.app/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Two Desks - Small studio. Thoughtful apps.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two Desks - Small studio. Thoughtful apps.">
+  <meta name="twitter:description" content="A small studio making privacy-first mobile apps. No dark patterns, no guilt trips.">
+  <meta name="twitter:image" content="https://twodesks.app/social-card.png">
+  <meta name="twitter:image:alt" content="Two Desks - Small studio. Thoughtful apps.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
   <header>
     <div class="container">
       <a href="/" class="logo">Two Desks</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#apps">Apps</a>
+        <a href="#contact">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="container">
-        <h1>Two Desks</h1>
+        <h1 id="hero-title">Two Desks</h1>
         <p class="tagline">Small studio. Thoughtful apps.</p>
         <p class="intro">We make mobile apps that respect your time, your data, and your wellbeing. Nothing more, nothing less.</p>
       </div>
     </section>
 
     <!-- About Section -->
-    <section class="about">
+    <section class="about" aria-labelledby="about-title">
       <div class="container">
-        <p class="section-title">About</p>
+        <h2 id="about-title" class="section-title">About</h2>
         <div class="about-content">
           <p>We're <strong>Harry and Vasso</strong>. The name? We work from two desks at home.</p>
           <p>We build mobile apps — the kind we'd actually want to use. Privacy-first, no dark patterns, no guilt trips.</p>
@@ -36,9 +60,9 @@
     </section>
 
     <!-- Values Section -->
-    <section class="values">
+    <section class="values" aria-labelledby="values-title">
       <div class="container">
-        <p class="section-title">What we believe</p>
+        <h2 id="values-title" class="section-title">What we believe</h2>
         <ul class="values-list">
           <li>
             <strong>Privacy-first</strong>
@@ -57,11 +81,11 @@
     </section>
 
     <!-- Apps Section -->
-    <section class="apps">
+    <section class="apps" id="apps" aria-labelledby="apps-title">
       <div class="container">
-        <p class="section-title">Our apps</p>
+        <h2 id="apps-title" class="section-title">Our apps</h2>
         <div class="apps-grid">
-          <a href="https://bloomery.app" class="app-card">
+          <a href="https://bloomery.app" class="app-card" aria-label="Visit Bloomery, a mood journal coming soon">
             <h3>Bloomery</h3>
             <p>A mood journal that welcomes you back without judgment. Track how you feel, on your own terms.</p>
             <span class="status">Coming soon</span>
@@ -71,10 +95,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="contact">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <div class="contact-content">
-          <p class="section-title">Get in touch</p>
+          <h2 id="contact-title" class="section-title">Get in touch</h2>
           <p>Questions, ideas, or just want to say hello?</p>
           <a href="mailto:hello@twodesks.app" class="email-link">hello@twodesks.app</a>
         </div>

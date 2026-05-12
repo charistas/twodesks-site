@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Two Desks">
+  <rect width="64" height="64" rx="12" fill="#FAF9F7"/>
+  <path d="M12 20h40v7H12zM16 27h6v17h-6zM42 27h6v17h-6zM25 36h14v5H25z" fill="#3A7A7A"/>
+  <path d="M12 20h40" stroke="#2C2C2C" stroke-width="2" stroke-linecap="round"/>
+</svg>
