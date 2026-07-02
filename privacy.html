@@ -36,7 +36,7 @@
     </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="/">Home</a>
-      <a href="mailto:hello%40twodesks.app">Contact</a>
+      <a href="/#contact">Contact</a>
     </nav>
   </header>
 
@@ -52,7 +52,7 @@
 
     <section class="content-section">
       <h2>Contact email</h2>
-      <p>If you email us at <a href="mailto:hello%40twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>, we receive your email address and whatever you choose to include in the message. We use that information to reply to you. We do not sell it or add it to a marketing list.</p>
+      <p>If you email us at <a href="/#contact" data-email-user="hello" data-email-domain="twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>, we receive your email address and whatever you choose to include in the message. We use that information to reply to you. We do not sell it or add it to a marketing list.</p>
     </section>
 
     <section class="content-section">
@@ -73,7 +73,7 @@
 
     <section class="content-section">
       <h2>Questions</h2>
-      <p>Email us at <a href="mailto:hello%40twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>.</p>
+      <p>Email us at <a href="/#contact" data-email-user="hello" data-email-domain="twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>.</p>
     </section>
   </main>
 
@@ -82,10 +82,20 @@
       <p>&copy; 2026 Two Desks</p>
       <nav class="footer-links" aria-label="Footer">
         <a href="/">Home</a>
-        <a href="mailto:hello%40twodesks.app">Contact</a>
+        <a href="/#contact">Contact</a>
         <a href="https://bloomery.app">Bloomery</a>
       </nav>
     </div>
   </footer>
+
+  <script>
+    (() => {
+      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((link) => {
+        const email = `${link.dataset.emailUser}@${link.dataset.emailDomain}`;
+        link.href = `mailto:${email}`;
+        link.textContent = email;
+      });
+    })();
+  </script>
 </body>
 </html>
