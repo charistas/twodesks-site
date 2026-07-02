@@ -128,7 +128,7 @@
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">Questions, ideas, or a note for the studio?</h2>
         </div>
-        <a class="email-link" href="#contact" data-email-user="hello" data-email-domain="twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>
+        <span class="email-link" data-email-user="hello" data-email-domain="twodesks.app" data-email-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</span>
       </div>
     </section>
   </main>
@@ -146,10 +146,19 @@
 
   <script>
     (() => {
-      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((link) => {
-        const email = `${link.dataset.emailUser}@${link.dataset.emailDomain}`;
+      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((element) => {
+        const email = `${element.dataset.emailUser}@${element.dataset.emailDomain}`;
+        const link = document.createElement("a");
         link.href = `mailto:${email}`;
         link.textContent = email;
+        link.className = element.className;
+
+        const label = element.dataset.emailLabel;
+        if (label) {
+          link.setAttribute("aria-label", label);
+        }
+
+        element.replaceWith(link);
       });
 
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

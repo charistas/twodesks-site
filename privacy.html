@@ -52,7 +52,7 @@
 
     <section class="content-section">
       <h2>Contact email</h2>
-      <p>If you email us at <a href="/#contact" data-email-user="hello" data-email-domain="twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>, we receive your email address and whatever you choose to include in the message. We use that information to reply to you. We do not sell it or add it to a marketing list.</p>
+      <p>If you email us at <span data-email-user="hello" data-email-domain="twodesks.app" data-email-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</span>, we receive your email address and whatever you choose to include in the message. We use that information to reply to you. We do not sell it or add it to a marketing list.</p>
     </section>
 
     <section class="content-section">
@@ -73,7 +73,7 @@
 
     <section class="content-section">
       <h2>Questions</h2>
-      <p>Email us at <a href="/#contact" data-email-user="hello" data-email-domain="twodesks.app" aria-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</a>.</p>
+      <p>Email us at <span data-email-user="hello" data-email-domain="twodesks.app" data-email-label="Email hello at twodesks dot app">hello [at] twodesks [dot] app</span>.</p>
     </section>
   </main>
 
@@ -90,10 +90,19 @@
 
   <script>
     (() => {
-      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((link) => {
-        const email = `${link.dataset.emailUser}@${link.dataset.emailDomain}`;
+      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((element) => {
+        const email = `${element.dataset.emailUser}@${element.dataset.emailDomain}`;
+        const link = document.createElement("a");
         link.href = `mailto:${email}`;
         link.textContent = email;
+        link.className = element.className;
+
+        const label = element.dataset.emailLabel;
+        if (label) {
+          link.setAttribute("aria-label", label);
+        }
+
+        element.replaceWith(link);
       });
     })();
   </script>
