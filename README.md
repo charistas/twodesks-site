@@ -21,6 +21,7 @@ Do not assume Cloudflare-injected behavior from local preview. After deploy, re-
 ## Launch QA Notes
 
 - Pages: `index.html`, `privacy.html`
+- Cloudflare security hardening: follow `cloudflare-security.md` before launch or after DNS/security changes.
 - Metadata: canonical URLs, Open Graph, Twitter preview cards, theme color, SVG favicon, and social preview image are defined.
 - Accessibility: semantic headings, skip link, visible keyboard focus, and 44px minimum link targets are included.
 - Privacy: policy is scoped to the studio website, contact email, GitHub Pages hosting, and Cloudflare-provided site services. It does not claim Cloudflare Web Analytics unless separately confirmed.

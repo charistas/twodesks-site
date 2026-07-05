@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Privacy policy for the Two Desks studio website.">
   <meta name="theme-color" content="#F7F0E4">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
   <title>Privacy Policy - Two Desks</title>
   <link rel="canonical" href="https://twodesks.app/privacy.html">
   <meta property="og:type" content="website">
@@ -88,23 +89,6 @@
     </div>
   </footer>
 
-  <script>
-    (() => {
-      document.querySelectorAll("[data-email-user][data-email-domain]").forEach((element) => {
-        const email = `${element.dataset.emailUser}@${element.dataset.emailDomain}`;
-        const link = document.createElement("a");
-        link.href = `mailto:${email}`;
-        link.textContent = email;
-        link.className = element.className;
-
-        const label = element.dataset.emailLabel;
-        if (label) {
-          link.setAttribute("aria-label", label);
-        }
-
-        element.replaceWith(link);
-      });
-    })();
-  </script>
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
