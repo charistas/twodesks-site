@@ -24,7 +24,7 @@ Do not assume Cloudflare-injected behavior from local preview. After deploy, re-
 - Cloudflare security hardening: follow `cloudflare-security.md` before launch or after DNS/security changes.
 - Metadata: canonical URLs, Open Graph, Twitter preview cards, theme color, SVG favicon, and social preview image are defined.
 - Accessibility: semantic headings, skip link, visible keyboard focus, and 44px minimum link targets are included.
-- Privacy: policy is scoped to the studio website, contact email, GitHub Pages hosting, and Cloudflare-provided site services. It does not claim Cloudflare Web Analytics unless separately confirmed.
+- Privacy: policy is scoped to the studio website, contact email, the outbound Buy Me a Coffee support link, GitHub Pages hosting, and Cloudflare-provided site services. It does not claim Cloudflare Web Analytics unless separately confirmed.
 - Visual QA should cover desktop `1280x900` and mobile `390x844` with a CSS-viewport-accurate browser check.
 - Last local QA update: July 2, 2026.
 

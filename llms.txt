@@ -6,8 +6,8 @@ Two Desks is run by Harry and Vasso. The studio builds mobile apps that respect 
 
 ## Primary Pages
 
-- [Two Desks homepage](https://twodesks.app/): Studio overview, values, Tendi link, and contact information.
-- [Two Desks privacy policy](https://twodesks.app/privacy.html): Website privacy details covering contact email, GitHub Pages hosting, Cloudflare-provided site services, and the absence of advertising trackers.
+- [Two Desks homepage](https://twodesks.app/): Studio overview, values, Tendi link, optional support link, and contact information.
+- [Two Desks privacy policy](https://twodesks.app/privacy.html): Website privacy details covering contact email, the outbound Buy Me a Coffee support link, GitHub Pages hosting, Cloudflare-provided site services, and the absence of advertising trackers.
 
 ## Related Sites
 
@@ -17,4 +17,5 @@ Two Desks is run by Harry and Vasso. The studio builds mobile apps that respect 
 ## Contact
 
 - [Email Two Desks](mailto:hello@twodesks.app): General studio contact.
+- [Support Two Desks](https://buymeacoffee.com/twodesks): Optional one-time tips through Buy Me a Coffee.
 - [Security contact](https://twodesks.app/.well-known/security.txt): Security vulnerability disclosure contact.

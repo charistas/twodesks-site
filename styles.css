@@ -288,6 +288,7 @@ h3 {
 
 .section-heading h2,
 .about-layout h2,
+.support-layout h2,
 .contact-layout h2 {
   max-width: 780px;
 }
@@ -520,6 +521,43 @@ h3 {
   background: var(--white);
 }
 
+.support-section {
+  background: rgba(255, 250, 242, 0.72);
+  border-top: 1px solid var(--line);
+}
+
+.support-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.85fr);
+  gap: 52px;
+  align-items: center;
+}
+
+.support-copy p {
+  margin-bottom: 24px;
+  color: var(--ink-soft);
+  font-size: 1.12rem;
+}
+
+.support-link {
+  min-height: 48px;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border: 1px solid var(--teal-deep);
+  border-radius: 999px;
+  color: var(--teal-deep);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.support-link:hover {
+  color: var(--white);
+  background: var(--teal-deep);
+}
+
 .footer {
   color: var(--ink-soft);
   background: #fbf7ef;
@@ -635,6 +673,7 @@ h3 {
 
   .about-layout,
   .product-showcase,
+  .support-layout,
   .contact-layout {
     grid-template-columns: 1fr;
   }
@@ -729,6 +768,10 @@ h3 {
   }
 
   .contact-layout {
+    gap: 28px;
+  }
+
+  .support-layout {
     gap: 28px;
   }
 
