@@ -1,0 +1,77 @@
+{
+  "siteName": "Two Desks",
+  "domain": "https://twodesks.app",
+  "previewPort": 8001,
+  "pages": ["index.html", "privacy.html"],
+  "sitemapPaths": ["/", "/privacy.html", "/.well-known/security.txt"],
+  "requiredFiles": [
+    "CNAME",
+    "README.md",
+    "index.html",
+    "privacy.html",
+    "styles.css",
+    "assets/site.js",
+    "_config.yml",
+    "social-card.png",
+    "social-card.svg",
+    "favicon.svg",
+    "robots.txt",
+    "sitemap.xml",
+    "llms.txt",
+    ".well-known/security.txt"
+  ],
+  "pagesConfig": {
+    "requiredIncludes": [".well-known"],
+    "requiredExcludes": [
+      ".cache",
+      ".cursor",
+      ".github",
+      "AGENTS.md",
+      "CLAUDE.md",
+      "README.md",
+      "cloudflare-security.md",
+      "node_modules",
+      "package-lock.json",
+      "package.json",
+      "playwright-report",
+      "playwright.config.js",
+      "site.config.json",
+      "test-results",
+      "tests",
+      "tools"
+    ]
+  },
+  "expectedExternalLinks": [
+    "https://tendijournal.app",
+    "https://buymeacoffee.com/twodesks"
+  ],
+  "allowedFormActions": [],
+  "requiredMailtoLinks": ["hello@twodesks.app"],
+  "bannedPublicTerms": ["Bloomery", "Mind Garden", "Mossbear", "Terrarium"],
+  "disallowedScriptMarkers": [
+    "static.cloudflareinsights.com",
+    "cloudflareinsights.com",
+    "beacon.min.js",
+    "googletagmanager.com",
+    "google-analytics.com",
+    "plausible.io",
+    "umami",
+    "fathom"
+  ],
+  "requiredPageText": {
+    "index.html": [
+      "Two Desks",
+      "Tendi is our first public product",
+      "Your data should stay yours",
+      "Support Two Desks"
+    ],
+    "privacy.html": [
+      "no accounts",
+      "no forms",
+      "no newsletter signup",
+      "no advertising trackers",
+      "Buy Me a Coffee",
+      "Cloudflare"
+    ]
+  }
+}

@@ -4,7 +4,7 @@ Static website for [twodesks.app](https://twodesks.app), the studio site for Two
 
 ## Local Development
 
-Use port `8001` so it does not collide with the Bloomery site preview on `8000`.
+Use port `8001` so it does not collide with the Tendi site preview on `8000`.
 
 ```bash
 python3 -m http.server 8001
@@ -28,16 +28,33 @@ Do not assume Cloudflare-injected behavior from local preview. After deploy, re-
 - Visual QA should cover desktop `1280x900` and mobile `390x844` with a CSS-viewport-accurate browser check.
 - Last local QA update: July 2, 2026.
 
+## Verification
+
+Install test dependencies and Playwright's Chromium browser once:
+
+```bash
+npm ci
+npm run install:browsers
+```
+
+Run the full local gate before handoff:
+
+```bash
+npm test
+```
+
+This runs static metadata/link/content checks plus Playwright browser rendering and axe accessibility smoke tests. Screenshots are written to `test-results/screenshots/` for desktop `1280x900` and mobile `390x844` review.
+
 ## Asset Provenance
 
-Assets copied from the sibling Bloomery website in `../bloomery-site/`:
+Assets copied from the sibling Tendi website in `../tendi-site/`:
 
 - `assets/fonts/Fraunces-opsz-wght-latin.woff2`
 - `assets/fonts/OFL.txt`
 - `assets/app-icon.png`
 - `assets/screenshot-home.png`
 
-Fraunces is licensed under the SIL Open Font License. The subset was already produced for the Bloomery site from the Google Fonts upstream source:
+Fraunces is licensed under the SIL Open Font License. The subset was already produced for the Tendi site from the Google Fonts upstream source:
 
 ```bash
 curl -L 'https://raw.githubusercontent.com/google/fonts/main/ofl/fraunces/Fraunces%5BSOFT%2CWONK%2Copsz%2Cwght%5D.ttf' -o /private/tmp/Fraunces-variable.ttf
