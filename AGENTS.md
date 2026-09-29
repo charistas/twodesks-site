@@ -29,7 +29,7 @@ Open `http://localhost:8001`.
 
 ## Verification
 
-Install dependencies with `npm ci` after cloning or when `package-lock.json` changes.
+Install dependencies after cloning or when `package-lock.json` changes. On this laptop use `socket npm ci` and route any nested registry operations through Socket; never bypass a blocked scan. On other machines, follow the approved supply-chain policy for the exact-lockfile install. Checked-in `npm run` scripts using local tools remain valid.
 Install Playwright's Chromium browser with `npm run install:browsers` before the first browser test run on a fresh machine.
 
 Run the full local gate before handoff:
